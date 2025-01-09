@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+@media (max-width: 575px){
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    background-color:#441752;
+    color:#F29F58;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh; 
+}
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 7px solid #F29F58;
+    padding: 1rem;
+    position: relative;
+    color:#F29F58;
+
+}
+
+.Between{
+    font-size: .5rem;
+
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+  padding: 0 10px;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.number{
+    background-color:#AB4459;
+    width: 40%;
+    height: 100px;
+    color: #F29F58;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -80px;
+    margin: 2rem 0;
+}
+
+.btn{
+display: flex;
+flex-direction: column;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    background-color: #AB4459;
+    color:#F29F58;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 150px;
+    border: none;
+
+}
+
+
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   
+
+}
+
+
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.guess {
+    width: 90%;
+    max-width: 150px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: #AB4459;
+    border: none;
+    border-radius: 5px;
+    color:#F29F58 ;
+}
+
+.message {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+}

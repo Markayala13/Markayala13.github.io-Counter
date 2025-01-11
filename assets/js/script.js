@@ -13,6 +13,8 @@ document.querySelector(".btn.check").addEventListener("click", function () {
     // Capturar el valor del input
     let getValue = document.querySelector(".guess").value;
 
+ 
+
     // Validar si el input está vacío
     if (getValue === "" || getValue.trim() === "") {
         document.querySelector(".message").textContent = "Add a number from 1 to 20.";
@@ -27,7 +29,13 @@ document.querySelector(".btn.check").addEventListener("click", function () {
     if (getValue === randomeNumber) {
         document.querySelector(".message").textContent = "YOU WON!";
 
+document.querySelector("body").style.background="#F29F58";
 
+document.querySelector("body").style.color="#441752";
+
+document.querySelector("header").style.color= "#441752";
+
+    document.querySelector("header").style.borderBottom = "7px solid #441752";
         
     } else if (getValue > randomeNumber) {
         document.querySelector(".message").textContent = "Too high!";
@@ -67,8 +75,18 @@ document.querySelector(".btn.again").addEventListener("click", function() {
     console.log("Nuevo número generado:", randomeNumber);
 
     document.querySelector(".score").textContent ="20";
+    
+    document.querySelector("body").style.background="#441752";
 
-    randomeNumber = Math.floor(Math.random() * 20) + 1;
-    contador=20;
+    document.querySelector("body").style.color="#F29F58";
+
+    document.querySelector("header").style.color= "#F29F58";
+
+    document.querySelector("header").style.borderBottom = "7px solid #F29F58";
+
+    
+    
+        
+    
   
 });
